@@ -1,0 +1,12 @@
+Specification,ATT (%)
+Baseline Model,9.325200380482856
+Bandwidth: 500.0m,13.173644320205224
+Bandwidth: 750.0m,10.34100191561853
+Bandwidth: 1000.0m,9.325200380482856
+Bandwidth: 1250.0m,7.30047877901312
+Bandwidth: 1500.0m,5.610383487579962
+Placebo (-3 years timing),0.26900882071989596
+Permutation Mean,0.6774613153151654
+Guideline Corrected Prices,17.156035867632745
+Jurisdiction-Year FE,9.169251042516603
+All Properties > 2km,8.417788065421483

@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#0B0F1A] text-white selection:bg-metro-primary/30 selection:text-white overflow-x-hidden;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/[0.03] backdrop-blur-xl border border-white/[0.05] shadow-[0_8px_32px_0_rgba(0,0,0,0.36)];
+  }
+
+  .glass-morphism {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-xl;
+  }
+
+  .neon-glow-primary {
+    @apply shadow-[0_0_40px_rgba(155,93,229,0.3)];
+  }
+
+  .neon-glow-secondary {
+    @apply shadow-[0_0_40px_rgba(0,187,249,0.3)];
+  }
+
+  .neon-glow-accent {
+    @apply shadow-[0_0_40px_rgba(241,91,181,0.3)];
+  }
+
+  .text-glow {
+    text-shadow: 0 0 15px currentColor;
+  }
+
+  .grid-pattern {
+    background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.05) 1px, transparent 0);
+    background-size: 40px 40px;
+  }
+}
+
+/* Custom scrollbar for a polished look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(155, 93, 229, 0.2);
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(155, 93, 229, 0.4);
+}
+
+/* Leaflet dark theme tweaks */
+.leaflet-container {
+  background: #0B0F1A !important;
+  border-radius: 2rem;
+}
+
+.leaflet-tile-pane {
+  filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
+}
+
+.leaflet-popup-content-wrapper {
+  @apply !bg-[#161b27] !text-white !rounded-2xl !border !border-white/10 !shadow-2xl;
+}
+
+.leaflet-popup-tip {
+  @apply !bg-[#161b27];
+}
+
+/* Lively Map Animations */
+.real-marker-pulse {
+  filter: drop-shadow(0 0 10px rgba(155, 93, 229, 0.8));
+  animation: marker-bounce 3s infinite ease-in-out;
+}
+
+@keyframes marker-bounce {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-10px) scale(1.1); }
+}
+
+.metro-path-glow {
+  filter: drop-shadow(0 0 5px #9b5de5);
+  stroke-dasharray: 10, 10;
+  animation: line-flow 20s linear infinite;
+}
+
+@keyframes line-flow {
+  from { stroke-dashoffset: 200; }
+  to { stroke-dashoffset: 0; }
+}
+
+.impact-pulse-ring {
+  animation: ripple 4s infinite cubic-bezier(0, 0, 0.2, 1);
+}
+
+@keyframes ripple {
+  0% { transform: scale(1); opacity: 0.5; }
+  100% { transform: scale(3); opacity: 0; }
+}
+

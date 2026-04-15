@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+chennai_metro_did/client/node_modules/
+.venv/
+venv/
+env/
+
+# Build outputs
+dist/
+build/
+chennai_metro_did/client/dist/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+server_*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backups
+*.zip
+*.tar.gz
+
+# Local dev
+.env
+.env.local

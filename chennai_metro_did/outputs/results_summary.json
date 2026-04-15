@@ -1,0 +1,133 @@
+{
+    "main_att": 9.33,
+    "main_ci": "[7.97, 10.70]",
+    "parallel_trends_pval": 0.0031,
+    "het_results": [
+        {
+            "Subgroup": "Distance: 0_250m",
+            "ATT (%)": 19.611818960292737,
+            "CI Lower": 16.493914127026123,
+            "CI Upper": 22.813173050305146,
+            "N": 23609,
+            "p_value": 2.6869987571995468e-40
+        },
+        {
+            "Subgroup": "Distance: 250_500m",
+            "ATT (%)": 11.50728554676319,
+            "CI Lower": 9.914249504954986,
+            "CI Upper": 13.123410167549366,
+            "N": 24173,
+            "p_value": 8.59509909931302e-50
+        },
+        {
+            "Subgroup": "Distance: 500m_1km",
+            "ATT (%)": 6.8036310692697555,
+            "CI Lower": 5.6120183232140075,
+            "CI Upper": 8.008688695549449,
+            "N": 25309,
+            "p_value": 1.3451341188438343e-30
+        },
+        {
+            "Subgroup": "Line: Blue",
+            "ATT (%)": 8.902924940474154,
+            "CI Lower": 5.617064339612288,
+            "CI Upper": 12.291012202868457,
+            "N": 24482,
+            "p_value": 4.8664529427070946e-08
+        },
+        {
+            "Subgroup": "Line: Green",
+            "ATT (%)": 9.43194799179281,
+            "CI Lower": 8.537181519295899,
+            "CI Upper": 10.334090803246564,
+            "N": 25322,
+            "p_value": 1.0774387165988417e-102
+        },
+        {
+            "Subgroup": "Station Type: Interchange",
+            "ATT (%)": 13.36506119166867,
+            "CI Lower": 11.588575255862942,
+            "CI Upper": 15.169828716990864,
+            "N": 23609,
+            "p_value": 1.2323218452917812e-54
+        },
+        {
+            "Subgroup": "Station Type: Terminal",
+            "ATT (%)": 9.872713456285751,
+            "CI Lower": 9.09423965236491,
+            "CI Upper": 10.656742287358531,
+            "N": 24012,
+            "p_value": 1.6963977184980902e-148
+        },
+        {
+            "Subgroup": "Station Type: Intermediate",
+            "ATT (%)": 8.653962274161309,
+            "CI Lower": 7.202362915581184,
+            "CI Upper": 10.125217362713457,
+            "N": 25470,
+            "p_value": 1.1257566636856816e-33
+        },
+        {
+            "Subgroup": "Era: Pre-COVID",
+            "ATT (%)": 10.38257204226012,
+            "CI Lower": 9.55990563443847,
+            "CI Upper": 11.21141571004416,
+            "N": 18503,
+            "p_value": 1.0924803625310168e-147
+        },
+        {
+            "Subgroup": "Era: Post-COVID",
+            "ATT (%)": 0.0,
+            "CI Lower": -100.0,
+            "CI Upper": 0.0,
+            "N": 8014,
+            "p_value": 0.8073004449537997
+        }
+    ],
+    "robustness": [
+        {
+            "Specification": "Baseline Model",
+            "ATT (%)": 9.325200380482856
+        },
+        {
+            "Specification": "Bandwidth: 500.0m",
+            "ATT (%)": 13.173644320205224
+        },
+        {
+            "Specification": "Bandwidth: 750.0m",
+            "ATT (%)": 10.34100191561853
+        },
+        {
+            "Specification": "Bandwidth: 1000.0m",
+            "ATT (%)": 9.325200380482856
+        },
+        {
+            "Specification": "Bandwidth: 1250.0m",
+            "ATT (%)": 7.30047877901312
+        },
+        {
+            "Specification": "Bandwidth: 1500.0m",
+            "ATT (%)": 5.610383487579962
+        },
+        {
+            "Specification": "Placebo (-3 years timing)",
+            "ATT (%)": 0.2690088207198959
+        },
+        {
+            "Specification": "Permutation Mean",
+            "ATT (%)": 0.6774613153151654
+        },
+        {
+            "Specification": "Guideline Corrected Prices",
+            "ATT (%)": 17.156035867632745
+        },
+        {
+            "Specification": "Jurisdiction-Year FE",
+            "ATT (%)": 9.169251042516604
+        },
+        {
+            "Specification": "All Properties > 2km",
+            "ATT (%)": 8.417788065421483
+        }
+    ]
+}
