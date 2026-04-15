@@ -13,10 +13,11 @@ class DataProvider:
 
     def initialize(self):
         # Try to load existing data (prioritize user-provided trials) or generate synthetic
-        base_dir = Path(__file__).parent.parent.parent
-        raw_path = Path("/Users/macbookm1/metro/chennai_property_trials.csv")
-        legacy_path = base_dir / "data" / "raw" / "property_transactions.csv"
-        metro_path = base_dir / "data" / "raw" / "metro_stations.csv"
+        # Dynamic path resolution for both local and cloud (Vercel) environments
+        root_dir = Path(__file__).parent.parent.parent.parent
+        raw_path = root_dir / "chennai_property_trials.csv"
+        legacy_path = root_dir / "chennai_metro_did" / "data" / "raw" / "property_transactions.csv"
+        metro_path = root_dir / "chennai_metro_did" / "data" / "raw" / "metro_stations.csv"
         
         target_path = raw_path if raw_path.exists() else legacy_path
         
