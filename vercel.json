@@ -1,26 +1,6 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "api/index.py",
-      "use": "@vercel/python"
-    },
-    {
-      "src": "chennai_metro_did/client/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/api/index.py"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/chennai_metro_did/client/index.html"
-    }
-  ]
+  "buildCommand": "cd chennai_metro_did/client && npm install && npm run build",
+  "outputDirectory": "chennai_metro_did/client/dist",
+  "framework": "vite"
 }
