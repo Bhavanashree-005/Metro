@@ -2,5 +2,8 @@
   "version": 2,
   "buildCommand": "cd chennai_metro_did/client && npm install && npm run build",
   "outputDirectory": "chennai_metro_did/client/dist",
-  "framework": "vite"
+  "framework": "vite",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
 }
