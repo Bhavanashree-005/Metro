@@ -2,14 +2,10 @@ services:
   - type: web
     name: metroimpact-api
     runtime: python
-    buildCommand: |
-      cd chennai_metro_did && pip install -r server/requirements.txt && cd client && npm install && npm run build
-    startCommand: |
-      cd chennai_metro_did/server && python -m uvicorn main:app --host 0.0.0.0 --port $PORT
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "cd chennai_metro_did/server && python -m uvicorn main:app --host 0.0.0.0 --port $PORT"
     envVars:
       - key: PYTHON_VERSION
         value: "3.11.0"
-      - key: NODE_VERSION
-        value: "20.0.0"
     plan: free
     autoDeploy: true
