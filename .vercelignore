@@ -1,0 +1,7 @@
+# Ignore the backend files on Vercel to avoid unnecessary Python builds
+# The backend is hosted on Render.com
+api/
+requirements.txt
+render.yaml
+chennai_metro_did/server/
+chennai_metro_did/data/
